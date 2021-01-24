@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filter</title>
+</head>
+<body>    
+    <div class="container">
+        <h1>To Do</h1>
+        <input id="filter" type="text" placeholder="Search todos" onkeyup="filterTodos()">
+        <ul id="todos">
+            <li class="todo"><a href="#">Work</a></li>
+            <li class="todo"><a href="#">Biology Lecture</a></li>
+            <li class="todo"><a href="#">Lunch</a></li>
+            <li class="todo"><a href="#">Read Stoics</a></li>
+            <li class="todo"><a href="#">Run</a></li>
+            <li class="todo"><a href="#">Go to school</a></li>
+            <li class="todo"><a href="#">Learn Spanish</a></li>
+        </ul>
+    </div>
+
+    <p id="demo"></p>
+    <script src="filter.js"></script>
+</body>
+</html>

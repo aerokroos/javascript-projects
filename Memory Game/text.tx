@@ -1,0 +1,87 @@
+class Card {
+  constructor(name, backImage, cardImage, status, number) {
+    this.name = name;
+    this.backImage = backImage;
+    this.cardImage = cardImage;
+    this.status = status;
+    this.number = number;
+  }
+  
+  
+
+  turnOver() {}
+
+  checkMatched() {}
+}
+
+class CardTable {
+  constructor(cards) {
+    this.cardTable = document.getElementById("card-table");
+    this.cards = cards;
+  }
+
+  drawCards() {
+    console.log(cards);
+    let table = this.cardTable;
+    cards.forEach(function (card) {
+      let cardDom = document.createElement("img");
+      cardDom.src = card.backImage;
+      table.appendChild(cardDom);
+    });
+  }
+}
+
+class MemoryGame {
+  constructor() {
+    this.start = document.getElementById("start");
+    this.gameStatus = 0;
+    this.allCards = new CardTable();
+  }
+
+  start() {
+    const allCards = this.allCards;
+    this.start.addEventListerner("click", function () {
+      allCards.drawCards();
+    });
+  }
+}
+
+// CREATE CARDS
+let card1 = new Card(
+  "card1",
+  "images/cardback.png",
+  "images/cardback.png",
+  0,
+  0
+);
+let card2 = new Card(
+  "card2",
+  "images/cardback.png",
+  "images/cardback.png",
+  0,
+  1
+);
+let card3 = new Card(
+  "card3",
+  "images/cardback.png",
+  "images/cardback.png",
+  0,
+  2
+);
+let card4 = new Card(
+  "card4",
+  "images/cardback.png",
+  "images/cardback.png",
+  0,
+  3
+);
+
+const cards = [card1, card2, card2, card4];
+// CALL
+const memoryGame = new MemoryGame();
+// assign
+const cardTable = new CardTable(cards);
+
+memoryGame.start();
+// DRAW CARDS
+// memoryGame.allCards.drawCards();

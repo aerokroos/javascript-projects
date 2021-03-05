@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    
+    <form id="form1" onsubmit="return verificar()">
+        <h2>Primer Formulario</h2>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" type="text" class="requerido">
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input id="apellido" type="text" class="requerido">
+        <br>
+        <label for="telefono">Telefono:</label>
+        <input id="telefono" type="text" class="requerido">
+        <br>
+        <label for="correo">Correo:</label>
+        <input id="correo" type="text" class="requerido">
+        <br>
+        <label for="curp">Curp:</label>
+        <input id="curp" type="text" class="requerido">
+        <br>
+
+        <!-- <input type="submit"> -->
+        
+    </form>
+
+    <form id="form2" onsubmit="return verificar()">
+        <h2>Segundo Formulario</h2>
+        <label for="direccion">Direccion:</label>
+        <input id="direccion" type="text" class="requerido">
+        <br>
+        <label for="codigoPostal">Codigo Postal:</label>
+        <input id="codigoPostal" type="text" class="requerido">
+        <br>
+        <label for="localidad">Localidad:</label>
+        <input id="localidad" type="text" class="requerido">
+        <br>
+        <label for="estado">Estado:</label>
+        <input id="curp" type="text" class="requerido">
+        <br>
+
+        <input type="submit">
+    </form>
+
+
+
+    <style>
+        form {
+            padding: 1em 0;
+        }
+
+        form > input {
+            padding: .5em 0;
+            margin: .5em 0;
+        }
+    </style>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>

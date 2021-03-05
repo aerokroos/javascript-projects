@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejericio 4</title>
+</head>
+<body>
+    
+    <form id="formulario" onsubmit="return guardarInformacion(event)">
+
+        <div>
+            <label for="nombreCompleto">1. Nombre Completo</label><br>
+            <input type="text" id="nombreCompleto" oninvalid="alert('Te falta poner el nombre')" required>
+            <br>
+        </div>
+
+        <div>
+            <label for="lengua">2. Selecciona lengua materna</label><br>
+            <input type="radio" class="lengua" name="lengua" value="Español" oninvalid="alert('Te falta poner un idioma')" required>Español</input><br>
+            <input type="radio" class="lengua" name="lengua" value="Inglés">Inglés</input><br>
+            <input type="radio" class="lengua" name="lengua" value="Alemán">Alemán</input><br>
+            <input type="radio" class="lengua" name="lengua" value="Francés">Francés</input><br>
+        </div>
+
+
+        <div>
+            <label for="pasatiempo">3. Seleccion tus pasatiempos favoritos</label><br>
+            <input type="checkbox" value="Lectura" class="pasatiempo">
+            <label for="pasatiempo">Lectura</label><br>
+            <br>
+            <input type="checkbox" value="Deporte" class="pasatiempo">
+            <label for="pasatiempo">Deporte</label><br>
+            <br>
+            <input type="checkbox" value="Video Juegos" class="pasatiempo">
+            <label for="pasatiempo">Video Juegos</label><br>
+            <br>
+            <input type="checkbox" value="Dormir" class="pasatiempo">
+            <label for="pasatiempo">Dormir</label><br>
+            <br>
+            <input type="checkbox" value="Viajar" class="pasatiempo">
+            <label for="pasatiempo">Viajar</label><br>
+            <br>
+        </div>
+
+        <div>
+            <label for="fruta">4. Fruta Favorita:</label>
+            <select class="fruta" required>
+                <option>Naranja</option>
+                <option>Pera</option>
+                <option>Fresa</option>
+                <option>Manzana</option>
+                <option>Platano</option>
+            </select>
+        <br>
+        </div>
+
+        <div>
+            <label for="sexo">5. Selecciona tu sexo</label><br>
+            <input type="radio" class="sexo" name="sexo" value="Hombre" oninvalid="alert('Te falta poner el sexo')" required>Hombre</input><br>
+            <input type="radio" class="sexo" name="sexo" value="Mujer" >Mujer</input><br>
+        </div>
+
+        <div>
+            <p>6. Elije tu fecha de nacimiento</p>
+            <input type="date" id="fecha" oninvalid="alert('Te falta poner la fecha')" required>
+        </div>
+
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    <style>
+        form > div {
+            padding: 1em 0em;
+  
+        }
+    </style>
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>

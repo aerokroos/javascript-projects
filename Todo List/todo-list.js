@@ -80,6 +80,8 @@ function getItemTodos() {
 function getTodos() {
   let todos = getItemTodos();
 
+  console.log(todos);
+
   todos.forEach(function (todo) {
     // div
     const div = document.createElement("div");
